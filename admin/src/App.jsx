@@ -6,10 +6,10 @@ import { AdminContext } from './context/AdminContext';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar';
 import { Route, Routes } from 'react-router-dom';
-import Dashboard from './pages/Admin/Dashboard';
-import AllAppointments from './pages/Admin/AllAppointments';
-import AddDoctor from './pages/Admin/AddDoctor';
-import DoctorsList from './pages/Admin/DoctorsList';
+import Dashboard from './pages/Admin/Dashboard.jsx';
+import AllAppointments from './pages/Admin/AllAppointments.jsx';
+import AddDoctor from './pages/Admin/AddDoctor.jsx';
+import DoctorsList from './pages/Admin/DoctorsList.jsx';
 
 const App = () => {
 

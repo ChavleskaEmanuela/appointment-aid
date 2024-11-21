@@ -1,4 +1,4 @@
-import mongoose, { mongo } from "mongoose";
+import mongoose from "mongoose";
 
 const appointmentSchema = new mongoose.Schema({
     userId: {type: String, required:true},

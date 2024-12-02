@@ -3,9 +3,11 @@ import {assets} from '../assets/assets'
 import { AdminContext } from '../context/AdminContext'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import { useNavigate } from 'react-router-dom'
 
 const Login = () => {
 
+    const navigate = useNavigate()
     const [email,setEmail] = useState('')
     const [password,setPassword] = useState('')
 
@@ -39,7 +41,7 @@ const Login = () => {
             <p>Password</p>
             <input onChange={(e)=>setPassword(e.target.value)} value={password} className='border border-[#DADADA] rounded w-full p-2 mt-1' type="password" required/>
         </div>
-        <button className='bg-primary text-white w-full py-2 rounded-md text-base'>Login</button>
+        <button onClick={navigate('/doctor-list')} className='bg-primary text-white w-full py-2 rounded-md text-base'>Login</button>
 
     </div>
     </form>
